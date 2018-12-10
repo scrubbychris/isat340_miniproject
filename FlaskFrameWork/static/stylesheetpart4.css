@@ -1,0 +1,41 @@
+title {
+	text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: -6px 3px 4px rgba(255, 255, 255, 0.55);
+}
+
+body {
+	background-color: #E6ACAC;
+	width: 99%;
+}
+
+td:first-child {
+	border: 1px solid black;
+	font-weight:bold;
+	font-style:italic;
+	text-align: center;
+}
+
+td:nth-child(2) {
+	border: 1px solid black;
+	text-align: left;
+}
+
+
+table {
+	margin: 0 auto;
+	border: 5px solid black;
+	-webkit-box-shadow: 5px 5px 20px 16px #D8F0FF; 
+	box-shadow: 5px 5px 20px 16px #D8F0FF;
+}
+
+br {
+	text-decoration: none;
+}
+
+

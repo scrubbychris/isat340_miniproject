@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Celebrities - All Celebrities</title>
+		<link type="text/css" rel="stylesheet" href="static/stylesheetpart4.css"/>
+		<link rel="shortcut icon" type="image/ico" href="static/favicon.ico"/>
+	</head>
+		<body>
+			<table>
+				{% for row in rows %}
+				<tr>
+					<td><img height="256" width="256" src="{{row[5]}}"/></td>
+				</tr>
+				<tr>
+					<td>Celebrity ID</td> <td>{{row[0]}}</td>
+				</tr>
+				<tr>
+					<td>First Name</td> <td>{{row[1]}}</td>
+				</tr>
+				<tr>
+					<td>Last Name</td> <td>{{row[2]}}</td>
+				</tr>
+				<tr>
+					<td>Age</td> <td>{{row[3]}}</td>
+				</tr>
+				<tr>
+					<td>Email</td> <td>{{row[4]}}</td>
+				</tr>
+				<tr>
+					<td>Bio</td> <td>{{row[6]}}</td>
+				</tr>
+				
+				{% endfor %}
+				
+			</table>
+		</body>
+	</html>
+				

@@ -1,0 +1,30 @@
+body {
+	text-align:left;
+	background-color: #E6ACAC;
+	width: 500px;
+}
+
+td {
+	border: 1px solid black;	
+}
+
+td:first-child {
+	border: 2px solid black;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+table {
+	text-align: left;
+	border: 5px solid black;
+	-webkit-box-shadow: 5px 5px 20px 16px #D8F0FF; 
+	box-shadow: 5px 5px 20px 16px #D8F0FF;
+}
+
+
+legend {
+	font-size: 24px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight:bold;
+}

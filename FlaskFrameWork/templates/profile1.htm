@@ -1,0 +1,56 @@
+<!DOCTYPE html/>
+
+<!-- HTML Lab 3 -->
+
+<html>
+<title>Celebrities - My Profile</title>
+<link type="text/css" rel="stylesheet" href="static/styleprofile.css"/>
+<link rel="shortcut icon" type="image/ico" href="static/favicon.ico"/>
+<body>
+	<fieldset>
+		<legend>Profile information:</legend>
+	<form action="" method="post">
+	
+		<table>
+		<p> Please <strong>update</strong> your profile information on the following form<br>
+		<em>All fields are required and must contain valid information</em></p>
+<tbody>
+<tr>
+<td>Member ID:</td>
+<td><input type="text" name="memberID" value="{{memberID}}" readonly /></td>
+<tr>
+<tr>
+<td>First Name:</td>
+<td><input type="text" name="firstname" value="{{firstname}}"></td>
+</tr>
+<tr>
+<td>Last Name:</td>
+<td><input type="text" name="lastname" value="{{lastname}}"></td>
+</tr>
+<tr>
+<td>Age:</td>
+<td><input type="text" name="age" value="{{age}}"></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td><input type="text" name="email" value="{{email}}"><i>e.g. user@domain.com</i></td>
+</tr>
+<tr>
+<td><img src ="{{url_for('static', filename='kyle.jpg')}}" width="110" height="130"></td>
+<td><input type="text" size="43" maxlength="43" name="bio" value="{{bio}}"></td>
+</tr>
+<tr>
+<td><input type="submit"value="Submit"></td>
+<td>{% if success %} <h3 style="color:magenta;">Data successfully submitted to the database!</h3>{% endif %}</td>
+</tr>
+</tbody>
+		</table>
+	</form>
+	</fieldset>
+</body>
+
+<a href ="/view_all_celebs"> Click to view all of the celebrities </a>
+<br></br>
+<a href ="/view_one_celeb"> Click to view one of the celebrities </a>
+</html>
+

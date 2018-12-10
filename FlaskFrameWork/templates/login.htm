@@ -1,0 +1,20 @@
+<!doctype html/>
+<html>
+  <head>
+    <title>Celebrities - Login</title>
+	<link rel="shortcut icon" type="image/ico" href="static/favicon.ico"/>
+	<link type="text/css" rel="stylesheet" href="static/stylesheet_login.css"/>
+  </head>
+  <body>
+      <h1>Welcome to Celebrities!  Please login below.</h1>
+	  <img src ="{{url_for('static', filename='rainbow.gif')}} "width="240" height="240" class="center">
+      <form action="" method="post">
+        <input type="text" placeholder="Username" name="username" value="{{request.form.username }}">
+        <input type="password" placeholder="Password" name="password" value="{{request.form.password }}">
+        <input type="submit" value="Login">
+      </form>
+      {% if error %}
+        <p><strong>Login Error:</strong> {{ error }}
+      {% endif %}
+  </body>
+</html>
